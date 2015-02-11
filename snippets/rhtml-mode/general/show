@@ -1,0 +1,23 @@
+#showTpl : Template for Show
+# --
+<div class="row" id="view_header_actions">
+	<div class="col-md-12">
+		<div class="btn-group pull-right">
+			<%= link_to raw('<span class="glyphicon glyphicon-chevron-left"></span> See All $1'), $2_path, class: 'btn btn-default' %>
+
+		</div>
+	</div>
+</div>
+
+<div class="row content_area">
+	<div class="col-md-12">
+		<div id="content_header">
+			<h1>$3</h1>
+		</div>
+
+		<div class="content_holder">
+         $0
+		</div>
+	</div>
+	</div>
+</div>

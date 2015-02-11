@@ -1,0 +1,8 @@
+# name: block comment
+# binding: C-. #
+# --
+/*
+ * ${description}
+ */
+
+$0

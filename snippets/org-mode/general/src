@@ -1,0 +1,5 @@
+#name : babel source block
+# --
+#+BEGIN_SRC $1
+$0
+#+END_SRC

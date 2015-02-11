@@ -1,0 +1,5 @@
+#name : org example
+# --
+#+BEGIN_EXAMPLE $1
+$0
+#+END_EXAMPLE

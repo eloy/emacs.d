@@ -13,7 +13,6 @@
 (load-theme 'harlock t)
 
 
-
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 (setq inhibit-startup-message t)
@@ -32,5 +31,7 @@
 ;;  Enable CUA Mode
 (cua-mode 1)
 
+;; Enable IDO mode
+(ido-mode t)
 
 (provide 'init-interface)
