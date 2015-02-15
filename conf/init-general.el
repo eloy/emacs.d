@@ -15,6 +15,9 @@
 (defalias 'ack-find-file-same 'ack-and-a-half-find-file-same)
 
 
+;; Magit
+(global-set-key (kbd "<f5>") 'magit-status)
+
 
 ;;======================================
 ;; Identation

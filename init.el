@@ -18,3 +18,4 @@
 (require 'init-coffee)
 (require 'init-css)
 (require 'init-c)
+(require 'init-org)
