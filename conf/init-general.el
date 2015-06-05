@@ -8,6 +8,10 @@
 (yas-global-mode 1)
 
 
+;; auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
+
 ;; ack and a half
 (defalias 'ack 'ack-and-a-half)
 (defalias 'ack-same 'ack-and-a-half-same)
