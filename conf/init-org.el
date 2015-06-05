@@ -23,10 +23,12 @@
          )
         ))
 
-;; Publish shortcut
-(define-key org-mode-map (kbd "C-c p") 'org-publish-current-project)
+
+(defun my-init-org-mode()
+  (define-key org-mode-map (kbd "C-c p") 'org-publish-current-project)
+  )
 
 ;; Enable Flyspell
 (add-hook 'org-mode-hook 'turn-on-flyspell)
-
+(add-hook 'org-mode-hook 'my-init-org-mode)
 (provide 'init-org)
