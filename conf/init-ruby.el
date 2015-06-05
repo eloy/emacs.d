@@ -75,4 +75,36 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 
+;; CUSTOM FUNC
+(defun ruby-modernize-hash (start end)
+  "Replace old hash sintax with the new one"
+  (interactive "r")
+  (replace-regexp ":\\(\\w+\\)\s?=>\s?" "\\1: " nil start end))
+
+(eval-after-load "ruby-mode"
+  '(global-set-key (kbd "C-c . m") 'ruby-modernize-hash))
+
+
+
+(defun ruby-let-to-sexp (start end)
+  "Replace let! with standard assignment"
+  (interactive "r")
+  (replace-regexp "let!?(:\\(.+\\))\s*{\s*\\(.+\\)\s*}" "\\1 = \\2 " nil start end))
+
+(eval-after-load "ruby-mode"
+  '(global-set-key (kbd "C-c . L") 'ruby-let-to-sexp))
+
+
+
+(defun rspec-update_syntax (start end)
+  "Replace Rspec should syntax"
+  (interactive "r")
+  (replace-regexp "\\([\(\)\.:-_A-Za-z0-9]+\\).should" "expect(\\1).to" nil start end))
+
+(eval-after-load "rspec-mode"
+  '(global-set-key (kbd "<f8>") 'rspec-update_syntax))
+
+
+
+
 (provide 'init-ruby)
