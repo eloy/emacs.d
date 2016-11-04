@@ -19,3 +19,5 @@
 (require 'init-css)
 (require 'init-c)
 (require 'init-org)
+(require 'init-elixir)
+(put 'upcase-region 'disabled nil)

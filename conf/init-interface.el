@@ -1,4 +1,4 @@
-; Disable menubar
+;; Disable menubar
 (menu-bar-mode -1)
  (when (functionp 'scroll-bar-mode)
    (scroll-bar-mode -1))
@@ -8,10 +8,14 @@
 (column-number-mode t)
 
 
-; My themes
+
+;; My themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'harlock t)
 
+
+;; Font size
+(set-face-attribute 'default nil :height 120)
 
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
