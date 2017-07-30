@@ -15,4 +15,6 @@
 (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
 
+;; Arduino
+(add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
 (provide 'init-c)
