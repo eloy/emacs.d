@@ -1,0 +1,4 @@
+# name: this.$1 = this.$1.bind(this);
+# key: bindit
+# --
+this.${1:Name} = this.$1.bind(this);$0

@@ -24,11 +24,35 @@
         ))
 
 
+(defun eloy/export-html-body (arg)
+  (interactive "P")
+  (org-html-export-to-html arg nil nil t))
+
+
 (defun my-init-org-mode()
   (define-key org-mode-map (kbd "C-c p") 'org-publish-current-project)
+  (define-key org-mode-map (kbd "<f9> b") 'eloy/export-html-body)
   )
 
 ;; Enable Flyspell
 (add-hook 'org-mode-hook 'turn-on-flyspell)
 (add-hook 'org-mode-hook 'my-init-org-mode)
 (provide 'init-org)
+
+
+(setq org-src-fontify-natively t)
+
+(global-set-key (kbd "<f9> x") 'bh/test)
+
+
+
+
+(setq ispell-program-name "hunspell")
+(defun endless/org-ispell ()
+  "Configure `ispell-skip-region-alist' for `org-mode'."
+  (make-local-variable 'ispell-skip-region-alist)
+  (add-to-list 'ispell-skip-region-alist '(org-property-drawer-re))
+  (add-to-list 'ispell-skip-region-alist '("~" "~"))
+  (add-to-list 'ispell-skip-region-alist '("=" "="))
+  (add-to-list 'ispell-skip-region-alist '("^#\\+BEGIN_SRC" . "^#\\+END_SRC")))
+(add-hook 'org-mode-hook #'endless/org-ispell)

@@ -61,3 +61,10 @@
     (if point
         (goto-char point)
       (message "No non-ascii characters."))))
+
+
+(setq reb-re-syntax 'string)
+
+
+;; Set default dictionary
+(setq ispell-dictionary "english")    ;set the default dictionary

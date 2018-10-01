@@ -10,19 +10,25 @@
 ;;(autoload 'jsx-mode "jsx-mode" "JSX mode" t)
 
 ;; JS2
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-jsx-mode))
+;; (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;; (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-jsx-mode))
 (add-to-list 'interpreter-mode-alist '("node" . js2-jsx-mode))
 (setq js2-strict-missing-semi-warning nil)
 (setq js2-basic-offset 2)
 
 
+;; RJSX
+(add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
 
+;; Disable electricity
+(with-eval-after-load 'rjsx-mode
+  (define-key rjsx-mode-map "<" nil)
+  (define-key rjsx-mode-map (kbd "C-d") nil))
 
 
 ;; Javascript and JSX indentation
 (setq js-indent-level 2)
-(setq jsx-indent-level 2)
+; (setq jsx-indent-level 2)
 
 
 
