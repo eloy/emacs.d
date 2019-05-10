@@ -1,0 +1,5 @@
+#name : LaTeX chessboard
+# --
+#+BEGIN_EXPORT latex
+  \\chessboard[setfen=$0,showmover]
+#+END_EXPORT
