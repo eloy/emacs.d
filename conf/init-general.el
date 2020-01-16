@@ -28,8 +28,11 @@
 ;;======================================
 ;; http://www.emacswiki.org/emacs/AutoIndentation
 
-(define-key global-map (kbd "RET") 'newline-and-indent)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
 
+(define-key global-map (kbd "RET") 'newline-and-indent)
+(define-key global-map (kbd "M-5") 'query-replace)
 
 ;; Auto indent pasted code
 (dolist (command '(yank yank-pop))
