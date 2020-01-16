@@ -48,15 +48,15 @@
 
 
 ;; Enable electric mode
-(eval-after-load "ruby-mode"
-	'(add-hook 'ruby-mode-hook 'ruby-electric-mode))
+;; (eval-after-load "ruby-mode"
+;; 	'(add-hook 'ruby-mode-hook 'ruby-electric-mode))
 
 
 
 ;; Enable auto-complete
-(eval-after-load 'auto-complete
-  '(add-to-list 'ac-modes 'inf-ruby-mode))
-(add-hook 'inf-ruby-mode-hook 'ac-inf-ruby-enable)
+;; (eval-after-load 'auto-complete
+;;   '(add-to-list 'ac-modes 'inf-ruby-mode))
+;; (add-hook 'inf-ruby-mode-hook 'ac-inf-ruby-enable)
 
 ;; Assign tab
 (eval-after-load 'inf-ruby '
