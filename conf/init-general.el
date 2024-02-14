@@ -7,6 +7,8 @@
 ;; Yasnippet
 (yas-global-mode 1)
 
+;; Ask before close
+
 
 ;; auto-complete
 (require 'auto-complete-config)
@@ -44,10 +46,6 @@
 
 
 
-(provide 'init-general)
-
-
-
 ;; Some helpers
 (defun find-first-non-ascii-char ()
   "Find the first non-ascii character from point onwards."
@@ -71,3 +69,35 @@
 
 ;; Set default dictionary
 (setq ispell-dictionary "english")    ;set the default dictionary
+
+
+;;======================================
+;; Remote machines
+;;======================================
+
+
+(defun connect-domoio ()
+  (interactive)
+  (dired "/ssh:harlock@app.domoio.com:/home/harlock"))
+
+
+(defun connect-rescue ()
+  (interactive)
+  (dired "/ssh:harlock@rescue:/home/harlock/src"))
+
+(defun connect-devid ()
+  (interactive)
+  (dired "/ssh:harlock@devid:/home/harlock"))
+
+(defun connect-prometheus ()
+  (interactive)
+  (dired "/ssh:ubuntu@prometheus.sagelyhealth.com:/etc/prometheus"))
+
+(defun connect-ray ()
+  (interactive)
+  (dired "/ssh:ray_user@ray:/home/ray_user/app/"))
+
+
+
+
+(provide 'init-general)

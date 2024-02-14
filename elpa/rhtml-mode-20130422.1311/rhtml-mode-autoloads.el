@@ -1,10 +1,26 @@
 ;;; rhtml-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "rhtml-mode" "rhtml-mode.el" (23761 18264 0
-;;;;;;  0))
+;;;### (autoloads nil "rhtml-erb" "rhtml-erb.el" (0 0 0 0))
+;;; Generated autoloads from rhtml-erb.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rhtml-erb" '("rhtml-" "skip-whitespace-forward")))
+
+;;;***
+
+;;;### (autoloads nil "rhtml-fonts" "rhtml-fonts.el" (0 0 0 0))
+;;; Generated autoloads from rhtml-fonts.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rhtml-fonts" '("erb-type-to-" "rhtml-")))
+
+;;;***
+
+;;;### (autoloads nil "rhtml-mode" "rhtml-mode.el" (0 0 0 0))
 ;;; Generated autoloads from rhtml-mode.el
 
 (autoload 'rhtml-mode "rhtml-mode" "\
@@ -14,11 +30,35 @@ Embedded Ruby Mode (RHTML)
 
 (add-to-list 'auto-mode-alist '("\\.html\\.erb$" . rhtml-mode))
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rhtml-mode" '("extract-partial" "rhtml-dashize")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("rhtml-erb.el" "rhtml-fonts.el" "rhtml-mode-pkg.el"
-;;;;;;  "rhtml-navigation.el" "rhtml-ruby-hook.el" "rhtml-sgml-hacks.el")
-;;;;;;  (23761 18264 0 0))
+;;;### (autoloads nil "rhtml-navigation" "rhtml-navigation.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from rhtml-navigation.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rhtml-navigation" '("current-line" "match-strings" "rails-root" "rhtml-" "rinari-find-by-context")))
+
+;;;***
+
+;;;### (autoloads nil "rhtml-ruby-hook" "rhtml-ruby-hook.el" (0 0
+;;;;;;  0 0))
+;;; Generated autoloads from rhtml-ruby-hook.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rhtml-ruby-hook" '("rhtml-" "rthml-insert-from-ruby-temp")))
+
+;;;***
+
+;;;### (autoloads nil "rhtml-sgml-hacks" "rhtml-sgml-hacks.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from rhtml-sgml-hacks.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rhtml-sgml-hacks" '("rhtml-" "sgml-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("rhtml-mode-pkg.el") (0 0 0 0))
 
 ;;;***
 
@@ -26,5 +66,6 @@ Embedded Ruby Mode (RHTML)
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; rhtml-mode-autoloads.el ends here

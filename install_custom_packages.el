@@ -1,0 +1,22 @@
+;; CUSTOM PACKAGES
+package-install ac-inf-ruby-pkg
+package-install ack-and-a-half-pkg
+package-install auto-complete-pkg
+package-install auto-complete-c-headers-pkg
+package-install cmake-mode-pkg
+package-install coffee-mode-pkg
+package-install csv-mode-pkg
+package-install git-commit-mode-pkg
+package-install git-rebase-mode-pkg
+package-install inf-ruby-pkg
+package-install jsx-mode-pkg
+package-install magit-pkg
+package-install org-pkg
+package-install popup-pkg
+package-install rainbow-mode-pkg
+package-install rhtml-mode-pkg
+package-install rspec-mode-pkg
+package-install ruby-electric-pkg
+package-install scss-mode-pkg
+package-install yaml-mode-pkg
+package-install yasnippet-pkg

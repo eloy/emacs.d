@@ -1,11 +1,12 @@
 ;; http://lorefnon.me/2014/02/02/configuring-emacs-for-rails.html
 
 ;; Files with ruby mode
-(add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.json.rabl$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.json.jbuilder$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.json.rabl$" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.json.jbuilder$" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.html.erb" . poly-html+erb-mode))
 
 
 ;; Sane indentation
